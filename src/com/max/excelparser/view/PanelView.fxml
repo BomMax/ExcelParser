@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.max.excelparser.view.PanelViewController">
+   <children>
+      <ProgressBar fx:id="mProgressBar" layoutX="27.0" layoutY="246.0" prefHeight="51.0" prefWidth="481.0" progress="0.0" />
+      <Button fx:id="mOkBtn" layoutX="363.0" layoutY="313.0" mnemonicParsing="false" onAction="#onOkBtnClickHandle" prefHeight="69.0" prefWidth="146.0" text="執行">
+         <font>
+            <Font size="32.0" />
+         </font></Button>
+      <Button fx:id="mNewFileBtn" layoutX="27.0" layoutY="189.0" mnemonicParsing="false" onAction="#onNewFileBtnClickHandle" prefHeight="42.0" prefWidth="105.0" text="新檔案">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Text fx:id="mOldFileName" layoutX="142.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="407.62890625">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <Text fx:id="mNewFileName" layoutX="142.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="407.62890625">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <Button fx:id="mOldFileBtn" layoutX="27.0" layoutY="130.0" mnemonicParsing="false" onAction="#onOldFileBtnClickHandle" prefHeight="42.0" prefWidth="105.0" text="舊檔案">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="mCancelBtn" layoutX="86.0" layoutY="313.0" mnemonicParsing="false" onAction="#onCancelBtnClickHandle" prefHeight="69.0" prefWidth="146.0" text="取消" textFill="#0a0a0a">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Button>
+      <Text layoutX="27.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Parse old file" wrappingWidth="414.62890625">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Text>
+      <Text layoutX="29.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. Compare new file" wrappingWidth="414.62890625">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="mCheckView_step_1" fitHeight="25.0" fitWidth="50.0" layoutX="486.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/com/max/excelparser/res/check.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="mCheckView_step_2" fitHeight="25.0" fitWidth="50.0" layoutX="484.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/com/max/excelparser/res/check.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="mFinishText" fill="#e80c29" layoutX="525.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="完成" wrappingWidth="56.62890625">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
